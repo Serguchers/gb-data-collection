@@ -44,9 +44,8 @@ link_data = []
 with open("Homework - 5\mail-data.json", "r") as f:
     data = json.load(f)
 
-print(len(data))
 
-for i in range(50):
+for i in data:
     email_info = {}
     email = driver.get(base_url + data[i])
 
