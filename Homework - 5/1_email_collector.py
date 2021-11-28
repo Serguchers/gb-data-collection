@@ -66,6 +66,6 @@ while flag:
     time.sleep(1)
 
 
-with open("./mail-data.json", "w") as f:
+with open("Homework - 5\mail-data.json", "w") as f:
     json.dump(check_list, f)
 print()

@@ -41,7 +41,7 @@ elem.click()
 base_url = "https://e.mail.ru"
 link_data = []
 
-with open("./mail-data.json", "r") as f:
+with open("Homework - 5\mail-data.json", "r") as f:
     data = json.load(f)
 
 print(len(data))
