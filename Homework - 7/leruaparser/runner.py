@@ -1,14 +1,14 @@
-import sys
 import os
-sys.path.append(os.getcwd() + '\\Homework - 7')
+import sys
 
-from scrapy.crawler import CrawlerProcess
-from scrapy.settings import Settings
+sys.path.append(os.getcwd() + "\\Homework - 7")
+
 from leruaparser import settings
 from leruaparser.spiders.leruaspider import LeruaspiderSpider
+from scrapy.crawler import CrawlerProcess
+from scrapy.settings import Settings
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     crawler_settings = Settings()
     # Передам ранее заданные настройки settings.py
     crawler_settings.setmodule(settings)
