@@ -8,12 +8,13 @@
 from itemadapter import ItemAdapter
 from pymongo import MongoClient, collection
 
+
 class InstaparserPipeline:
     def __init__(self) -> None:
-        client = MongoClient('127.0.0.1', 27017)
-        db = client['instagram_1012']
+        client = MongoClient("127.0.0.1", 27017)
+        db = client["instagram_1012"]
         self.collection = db.users
-        
+
     def process_item(self, item, spider):
         self.collection.insert_one(item)
         return item
